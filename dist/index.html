@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="theme-color" content="#0f172a" />
+    <meta name="description" content="Sistema de Gestión de Centros de Diagnóstico Integral - Red Pública de Salud">
+    <title>CDI BARAURE CENTER | AQUITA+</title>
+    
+    <!-- Tailwind CSS (CDN para asegurar que se vea el fondo transparente) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Configuración Tailwind -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              glass: "rgba(255, 255, 255, 0.1)",
+            }
+          }
+        }
+      }
+    </script>
+
+    <style>
+      /* 1. CRÍTICO: Fondo transparente para dejar ver el Shader */
+      html, body, #root {
+        background-color: transparent !important;
+        background: transparent !important;
+        min-height: 100vh;
+      }
+
+      /* 2. Scrollbar Estilizado */
+      ::-webkit-scrollbar { width: 8px; }
+      ::-webkit-scrollbar-track { background: rgba(0,0,0,0.1); }
+      ::-webkit-scrollbar-thumb { background: rgba(14, 165, 233, 0.5); border-radius: 4px; }
+      ::-webkit-scrollbar-thumb:hover { background: rgba(14, 165, 233, 0.8); }
+
+      /* 3. Animaciones UI */
+      @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+      .animate-fade-in { animation: fadeIn 0.5s ease-out forwards; }
+      
+      /* 4. Glassmorphism Utilities */
+      .glass-panel {
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+    <script type="module" crossorigin src="/assets/index-CHfy5qS9.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CDL9rXl_.css">
+  </head>
+  
+  <body class="text-slate-800 antialiased overflow-x-hidden selection:bg-cyan-500 selection:text-white">
+    <div id="root"></div>
+    
+    <!-- PUNTO DE ENTRADA: Apuntando a src/index.tsx -->
+  </body>
+</html>
